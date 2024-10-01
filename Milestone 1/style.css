@@ -1,0 +1,162 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F4F7FC;
+    margin: 0;
+    padding: 40px;
+    color: #333;
+}
+
+/* Typography Enhancements */
+h1 {
+    color: #f8a4d8;
+    font-size: 26px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 35px 0; /* Increased margin */
+    padding-bottom: 15px; /* Increased padding */
+    border-bottom: 2px solid #FFFFFF;
+    font-weight: normal;
+}
+
+/* Resume Container */
+.resume-container {
+    display: flex;
+    background-color: #ffffff;
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 0.5s ease-in-out; /* Added fade-in animation */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.resume-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Spacing Enhancements */
+section {
+    margin-bottom: 30px; /* Added breathing room between sections */
+}
+
+/* Left Section */
+.left-section {
+    background: linear-gradient(135deg, #6c63ff, #3d3a8b); /* Gradient background */
+    color: white;
+    padding: 40px;
+    width: 30%;
+    text-align: center;
+    border-right: 4px solid #f8a4d8;
+}
+
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid #f8a4d8;
+    margin-bottom: 25px;
+    transition: transform 0.3s ease;
+}
+
+.profile-picture:hover {
+    transform: scale(1.1); /* Subtle zoom effect */
+}
+
+/* Right Section */
+.right-section {
+    padding: 40px;
+    width: 70%;
+    background-color: #f9fbff;
+}
+
+/* Button Styling */
+button {
+    background: linear-gradient(135deg, #a18cd1, #6c63ff); /* Gradient button */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(108, 99, 255, 0.3);
+}
+
+button:hover {
+    background-color: #4B49F1;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(108, 99, 255, 0.4);
+}
+
+/* Hover Effect Enhancements on Links */
+a {
+    color: #6c63ff;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Added smooth transition */
+}
+
+a:hover {
+    color: #4B49F1;
+    text-decoration: underline;
+}
+
+/* Skills Section */
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+ul li {
+    background-color: #6C63FF;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+ul li:hover {
+    background-color: #4B49F1;
+    transform: scale(1.05);
+}
+
+/* Responsiveness Improvements */
+@media (max-width: 768px) {
+    .resume-container {
+        flex-direction: column;
+        width: 100%; /* Full width for small screens */
+    }
+    .left-section, .right-section {
+        width: 100%;
+        text-align: left; /* Adjusted alignment */
+    }
+    .profile-picture {
+        margin: 0 auto; /* Center profile picture */
+    }
+}

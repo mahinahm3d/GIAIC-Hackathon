@@ -1,0 +1,111 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f5f6fa; /* Light Gray for a subtle background */
+}
+
+form {
+    margin: auto;
+    background-color: #f2f4f7; /* Softer background for the form */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Lighter shadow for a smoother look */
+    padding: 30px;
+    max-width: 600px;
+    transition: box-shadow 0.3s ease;
+}
+
+form:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Slight shadow increase on hover */
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    background: linear-gradient(45deg, #a18cd1, #fbc2eb); /* A modern gradient */
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 2em;
+}
+
+fieldset {
+    border: 1px solid #6c63ff; /* Lighter border */
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+}
+
+legend {
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(45deg, #fbc2eb, #a18cd1); /* Gradient for title */
+    color: #ffffff;
+    padding: 10px;
+    font-size: 1.3em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Softer shadow */
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    color: #4a4a4a; /* Slightly darker text for contrast */
+    font-size: 1.1em;
+}
+
+input, textarea {
+    margin-top: 8px;
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #dcdde1; /* Softer input borders */
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 1em;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #6c63ff; /* More subtle color shift on focus */
+    box-shadow: 0 0 8px rgba(108, 99, 255, 0.2); /* Soft glow for focus */
+    outline: none;
+}
+
+button {
+    display: block;
+    width: 100%;
+    background: linear-gradient(45deg, #a18cd1, #fbc2eb); /* Gradient button */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 14px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6c63ff;
+    transform: translateY(-2px); /* Subtle lift on hover */
+}
+
+#resume-display {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #6c63ff; /* Matching colors with the form */
+    border-radius: 10px;
+    background-color: #ffffff; /* Lighter background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+#resume-display h2 {
+    color: #ffffff;
+    background-color: #6c63ff;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.5em;
+}
